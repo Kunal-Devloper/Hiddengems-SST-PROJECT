@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async src="https://api.countapi.xyz/hit/kunalhiddengemsproject.github.io/606cecd4-8d2a-4b66-b955-7e2b41376c07?callback=websiteVisits"></script>
 </head>
 <body>
     <section class="header">
@@ -29,6 +30,7 @@
     
     <!----- Footer ----->
     <section class="footer">
+    <h1>This site has been visited <span id="visits"></span> times.</h1>
     <h4>Check Out My-</h4>
     <div class="icons">
         
@@ -54,5 +56,14 @@
     }
     
 </script>
+   
+<script>
+    
+    function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
+    
+</script>
+    
 </body>
 </html>
